@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Timo van Neerden" />
+    <title>Pure HTML5+JS </title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<span id="cont"></span> Restantes <br>
+
+<input type="text" id="nome">
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+onkeyup=function (){
+
+     var campo = document.getElementById("field").value;
+      quant = 50;
+
+    total = campo.length;
+
+    if(total <= quant) {
+        resto = quant - total;
+        document.getElementById('cont').innerHTML = resto ;
+
+
+    } else {
+        document.getElementById('texto').value = valor.substr(0,quant);
+    }
+
+}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
