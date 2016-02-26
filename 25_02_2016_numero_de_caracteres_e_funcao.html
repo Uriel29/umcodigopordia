@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="uriel dos santos souza" />
+    <title> contar caracteres com JS e função</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<span id="cont"></span> Restantes 1<br>
+
+<input type="text" id="nome" value="12">
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+function caracteres (id,num,count) {
+
+
+
+
+onkeyup = function () {
+
+
+var  campo = document.getElementById(id).value;
+
+var quant = num;
+ total = campo.length;
+
+    if(total <= quant) {
+        resto = quant - total;
+        document.getElementById(count).innerHTML = resto ;
+
+
+    } else {
+        document.getElementById(id).value = campo.substr(0,quant);
+    }
+
+
+}
+
+}
+
+
+caracteres("nome",50,"cont");
+
+
+
+
+
+</script>
+</body>
+</html>
