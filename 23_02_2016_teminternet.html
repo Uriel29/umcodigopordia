@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+   
+    <title>saber se tem internet ou não</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+
+function checkNetConnection(){
+ var xhr = new XMLHttpRequest();
+ var file = "http://viacep.com.br/ws/"+84435000+"/json/";
+
+ xhr.open('HEAD', file, false);
+ try {
+  xhr.send();
+  if (xhr.status >= 200 && xhr.status < 304) {
+   return true;
+  } else {
+   return false;
+  }
+ } catch (e) {
+  return false;
+ }
+}
+
+
+    if (checkNetConnection() == true) {
+
+
+     var t = document.createTextNode("Você tem internet.");
+ document.getElementById("minhadiv").appendChild(t);
+
+
+    } else {
+
+ var t = document.createTextNode("Você não pode fazer o registro antes de mudar a hora.");
+ document.getElementById("minhadiv").appendChild(t);
+
+    }
+
+</script>
+
+<body>
+
+<div id="minhadiv"></div>
+</body>
+</html>
