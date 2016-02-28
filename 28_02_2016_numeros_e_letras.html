@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="uriel dos santos souza" />
+    <title> Verifica se tem  letras e numeros nos campos corretos</title>
+
+    <style type="text/css">
+
+
+
+    </style>
+
+
+</head>
+<body>
+<input type="text" id="nome">
+
+<input type="text" id="tel">
+
+
+<script type="text/javascript">
+
+
+
+
+var nome = document.getElementById('nome');
+var tel  = document.getElementById('tel');
+
+
+nome.onblur = function(){
+    var valo = nome.value;
+
+
+var numers = /[0-9]/g;
+
+if (valo.match(numers)) {
+alert("Este campo não pode conter nenhum número")
+
+}
+
+}
+
+tel.onblur = function(){
+    var nume = tel.value;
+
+
+    var numers = /[^\d]+/g;
+
+   if (nume.match(numers)) {
+
+alert("este campo não pode conter letras");
+   }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
