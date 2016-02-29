@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="uriel dos santos souza" />
+    <title> muda cor dos campos</title>
+
+    <style type="text/css">
+
+
+.input{
+
+    color:red;
+
+}
+
+
+    </style>
+
+
+</head>
+<body>
+<input type="text" id="nome" class="input">
+
+<input type="text" id="tel" class="input">
+
+
+<script type="text/javascript">
+
+
+ var campo = document.getElementById('nome');
+
+ campo.onfocus = function () {
+
+ campo.style.background = "blue";
+
+
+
+ }
+campo.onblur = function() {
+
+var numers = /[0-9]/g;
+
+ if (campo.value.match(numers)) {
+alert("Este campo não pode conter nenhum número");
+campo.style.background = "red";
+
+
+}else {
+alert("esta tudo correto");
+campo.style.background = "grey";
+
+
+}
+
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
