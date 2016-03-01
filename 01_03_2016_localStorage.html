@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="uriel dos santos souza" />
+    <title> Trabalhalando com local storage</title>
+
+    <style type="text/css">
+
+
+
+    </style>
+
+
+</head>
+<body>
+<button id="btn">apagar storage</button>
+
+
+<script type="text/javascript">
+var btn2 = document.getElementById('btn');
+
+
+
+//localstorage não se importa com sessão.
+
+ var  user = prompt("nome");
+
+
+window.sessionStorage.setItem('usuario', user);
+
+
+var usuario2 = window.sessionStorage.getItem('usuario');
+
+
+
+alert(usuario2);
+
+
+
+
+
+btn2.onclick = function () {
+
+window.sessionStorage.removeItem('usuario');
+
+var teste = window.sessionStorage.getItem('usuario');
+
+alert(teste);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
