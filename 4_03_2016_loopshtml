@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+
+    <title>testes</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+
+<body>
+<p id="recebe"></p>
+
+<script type="text/javascript">
+
+
+for (var i = 0; i <= 10; i++) {
+   console.log( i);
+}
+
+
+
+
+var r = 1;
+while (r <=10) {
+    console.log(r);
+    r++;
+}
+
+
+var l = 1;
+do {
+    console.log(l);
+
+    l++;
+}
+while (l <= 10);
+
+
+
+
+
+
+</script>
+</body>
+</html>
