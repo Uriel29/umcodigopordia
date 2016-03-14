@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Objeto - fala</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+
+
+<body>
+
+
+
+<script type="text/javascript">
+
+
+
+function fala(palavras) {
+     console.log( "o " + this.type + " diz '" +
+              palavras + "'");
+
+}
+
+
+var velho = {
+    type: "chato",
+    fala: fala};
+
+velho.fala("Bando" + " de imbecis");
+
+var bobo = {
+    type:"bobo",
+    fala:fala}
+
+    bobo.fala("Não entendi");
+
+
+
+
+</script>
+</body>
+</html>
