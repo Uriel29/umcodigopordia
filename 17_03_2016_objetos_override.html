@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Objeto - override</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+
+
+<body>
+
+
+
+<script type="text/javascript">
+
+
+function Peixe(tipo) {
+  this.tipo = tipo;
+}
+
+var peixeFresco = new Peixe("matador");
+Peixe.prototype.escamas = "pequena";
+console.log(peixeFresco.escamas);
+
+peixeFresco.escamas = "grandes, afiadas, e transparentes";
+console.log(peixeFresco.escamas);
+
+</script>
+</body>
+</html>
