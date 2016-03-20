@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Objeto - deletando</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+
+
+<body>
+
+
+
+<script type="text/javascript">
+
+var mapa = {};
+function storePhi(event, phi) {
+  mapa[event] = phi;
+}
+
+storePhi("pizza", 0.069);
+storePhi("touched tree", -0.081);
+storePhi("teste", -0.081);
+
+console.log(storePhi);
+
+Object.prototype.nonsense = "hi";
+for (var name in mapa)
+  console.log(name);
+
+console.log("nonsense" in mapa);
+
+console.log("toString" in mapa);
+
+
+
+delete Object.prototype.nonsense;
+
+
+
+</script>
+</body>
+</html>
