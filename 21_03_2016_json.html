@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Json para objeto</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = '{"nomes":[' +
+'{"Nome":"Carlos","snome":"Souza" },' +
+'{"nome":"Ana","snome":"Martins" },' +
+'{"nome":"Marcelo","snome":"Santos" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[2].nome + " " + obj.nomes[2].snome;
+</script>
+
+</body>
+</html>
