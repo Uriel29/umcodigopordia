@@ -1,0 +1,18 @@
+<html>
+ <head>
+  <title>Gerando imagem a partir do HTML</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+ </head>
+ <body>
+  <h1>Gerando imagem a partir do HTML</h1>
+<p>Codigo simples</p>
+<div id="teste"> teste</div>
+<script type="text/javascript">
+        html2canvas(teste, {
+            onrendered: function(canvas) {
+                document.body.appendChild(canvas);
+            }
+        });
+    </script>
+ </body>
+</html>
